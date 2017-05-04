@@ -1,0 +1,219 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ֆʏʺܮ۹࠮Ӯۀq</title>
+<meta name="keywords" content="qƷީʜ,ܮ֯ϸղ,bܴӎԫ">
+<meta name="description" content="ֆʏʺܮ۹࠮Ӯۀq"> 
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+//ʹķ_czcהг
+var _czc = _czc || [];
+_czc.push(["_trackEvent", "1257072119"]);
+</script>
+<style type="text/css"> 
+html, body {
+  width: 100%;
+  height: 100%; }
+html {
+  background: white;
+  color: black;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body, button, input, textarea, select, pre {
+  font-size: 14px;
+  font-family: "΢ɭ҅ۚ", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;background:#f8f8f8  repeat;}
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+.box{width:100%;height:auto;position:relative;margin:0px;padding:0px;overflow:hidden;}
+.innbox{width:100%;height:auto;position:relative;margin:0px;padding:0px;overflow:hidden;}
+img{border:0px;display:block;}
+a.link1{display:block;margin:0px;padding:0px;width:32.81%;height:auto;position:absolute;top:0%;left:12.34%;}
+a.link2{display:block;margin:0px;padding:0px;width:32.81%;height:auto;position:absolute;top:0%;right:12.34%;}
+.andor {
+ width: 40%;
+ position: fixed;
+ right: 0px;
+ top: 10px;
+ margin: 0px;
+ padding: 0px;
+ display: none;
+}
+.iphone {
+ width: 40%;
+ position: fixed;
+ right: 0px;
+ top: 10px;
+ margin: 0px;
+ padding: 0px;
+ display: none;
+}
+</style>
+<script type="text/javascript">
+var OMP = function () {
+ return new Base();
+}
+
+function Base(){}
+
+//ƽ̨ݬӢ
+Base.prototype.platform=function(){
+   var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//ӆ֯ו׋䰀F��ߐƏ 
+                    trident: u.indexOf('Trident') > -1, //IEŚۋ
+                    presto: u.indexOf('Presto') > -1, //operaŚۋ
+                    webKit: u.indexOf('AppleWebKit') > -1, //ƻڻbڈ٨Śۋ
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //ܰۼŚۋ
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //ˇرΪӆ֯ו׋
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //iosו׋
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //androidו׋ܲ֟uc䰀F��                   iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //ˇرΪiPhoneܲ֟QQHD䰀F��                   iPad: u.indexOf('iPad') > -1, //ˇرiPad
+                    webApp: u.indexOf('Safari') == -1 //ˇرwebӦكԌѲìûԐͷҿԫ֗ҿ
+                };
+            } (),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+  
+  if (browser.versions.ios) {
+            return 1;
+        }else{
+   return 2; 
+  }
+ }
+var t;
+var isRepeat = false;
+function hoverdeal(divhover) {
+    if (isRepeat == false) {
+        isRepeat = true;
+        clearInterval(t);
+        //event.stopPropagation();
+        $('.' + divhover).show(0, function () {
+            t = setInterval(function () {
+                var clickHover = document.getElementById(divhover);
+                TweenLite.to(clickHover, 0.4, { top: "0px" });
+                setTimeout(function () {
+                    var clickHover = document.getElementById(divhover);
+                    TweenLite.to(clickHover, 0.4, { top: "10px" });
+                }, 400);
+            }
+       , 800);
+        });
+        setTimeout(function () {
+            $('.' + divhover).hide();
+            clearInterval(t);
+            isRepeat = false;
+        }, 5000);
+       
+    }
+}
+
+function gotoURL(pname) {
+ _czc.push(["_trackEvent", "ڣ٦", "tޓ", pname]);
+}
+
+// Ɛ׏ˇرΪ΢х֧ܲضѦ
+function judgeAppBrowser() {
+    var ua = navigator.userAgent;
+    if(ua.indexOf("MicroMessenger") > -1) {
+  // alert("΢х")
+  return true;
+ } else if(ua.indexOf("Alipay") > -1) {
+  // alert("֧ضѦ")
+  return true;
+    } else {
+  //alert("Ǥ̻䰀F��
+  return false;
+    } 
+} 
+
+function startDownload() {
+ var sys1 = OMP().platform();
+ var isAppBrowser = judgeAppBrowser();
+ //TDAPP.onEvent("ֆʏʺܮ۹࠮Ӯq_bܴЂ՘","۹࠮ս֋");
+// gotoURL('Ђ՘ֆʏʺܮ');
+ if(sys1 == 1) {
+  // IOS
+  window.location.href = "https://open.cmbchina.com/dispatch/go?url=FastPayment&repaymentTag=3&urlVersion=25";
+ } else {
+  // Android
+  if(isAppBrowser) {
+   window.location.href = "http://cmblife.cmbchina.com/cmblife/download/cmblife_7.apk";
+  } else {
+   window.location.href = "http://cmblife.cmbchina.com/cmblife/download/cmblife_7.apk";
+  }
+ }
+}
+
+function startCmblife() {
+ var sys1 = OMP().platform();
+ var isAppBrowser = judgeAppBrowser();
+ TDAPP.onEvent("ֆʏʺܮ۹࠮Ӯq_bܴӎԫ","۹࠮ս֋");
+ gotoURL('bܴӎԫ');
+ if(sys1 == 1) {
+  // IOS
+  if(isAppBrowser) {
+   if(isSupportedVersion()) {
+    window.location.href = "https://open.cmbchina.com/dispatch/go?url=FastPayment&repaymentTag=3&urlVersion=25&tdEvent=&tdLable=%E8%BF%98%E6%AC%BE%E5%88%B0%E8%B4%A6-UL";
+   } else {
+    var divhover = 'iphone';
+    hoverdeal(divhover);
+   }
+  } else {
+   window.location.href = "cmblife://go?url=FastPayment&repaymentTag=3&urlVersion=25&tdLable=%E8%BF%98%E6%AC%BE%E5%88%B0%E8%B4%A6-Browser";
+   setTimeout(function () {
+    window.location = "https://itunes.apple.com/cn/app/zhao-shang-yin-xing-zhang/id398453262?mt=8";
+   }, 3000);
+  }
+ } else {
+  // Android
+  if(isAppBrowser) {
+   var divhover = 'andor';
+   hoverdeal(divhover);
+  } else {
+   window.location.href = "cmblife://go?url=FastPayment&repaymentTag=3&urlVersion=25";
+   setTimeout(function () {
+    window.location = "http://cmblife.cmbchina.com/cmblife/download/cmblife_7.apk";
+   }, 3000);
+  }
+ }
+}
+
+function isSupportedVersion() {
+ var isIOS9 = Boolean(navigator.userAgent.match(/OS [9]_\d[_\d]* like Mac OS X/i));
+ var isIOS10 = Boolean(navigator.userAgent.match(/OS [1][0]_\d[_\d]* like Mac OS X/i));
+ return isIOS9 || isIOS10;
+}
+
+function onload(){
+ var sys1 = OMP().platform();
+ if(sys1 == 1) {
+  TDAPP.onEvent("ֆʏʺܮ۹࠮Ӯq_׷ҳ","۹࠮ս֋");
+ }
+}
+
+</script> 
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+
+<a href="javascript:;"  onclick="startDownload();>iBookstޓ</a>
+
+</body>
+</html>
+
